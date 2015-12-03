@@ -41,14 +41,12 @@ public class LectureFichierTest {
     /**
      * Test of lectureNomFichier method, of class LectureFichier.
      */
-    @Test
+    @Test(expected=Exception.class)
     public void testLectureNomFichier() {
         System.out.println("lectureNomFichier");
-        String nomACharger = "";
-        LectureFichier instance = new LectureFichier();
-        instance.lectureNomFichier(nomACharger);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        System.out.println("Ouverture du fichier avec le nom lean au lieu de lena");
+        LectureFichier lectureFausse=new LectureFichier();
+        lectureFausse.lectureNomFichier("lean");
     }
 
     /**
