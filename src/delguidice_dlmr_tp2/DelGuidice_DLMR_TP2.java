@@ -24,7 +24,8 @@ public class DelGuidice_DLMR_TP2 {
         vecto.remplissageVecteur(lectureSimple.getMatriceImage());
         vecto.afficheVecteurDetailler();
         System.out.println(vecto.maximumVecteur());
-        EcritureHistoPGM ecritureSimple=new EcritureHistoPGM(vecto.getVecteur());
+        EcritureHistoPGM ecritureSimple=new EcritureHistoPGM();
+        ecritureSimple.MethodeEcritureHistoPGM(vecto.getVecteur());
         }
     
 }
