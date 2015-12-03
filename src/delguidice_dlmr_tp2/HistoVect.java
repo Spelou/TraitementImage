@@ -24,6 +24,10 @@ public class HistoVect {
         //initialisation du vecteur au valeurs 0
         vecteur = new int[256];
     }
+     public HistoVect(int [] vecteur) {
+        //initialisation du vecteur au valeurs 0
+        this.vecteur = vecteur;
+    }
 
     /**
      * remplissage du vecteur de l'histogramme
@@ -31,8 +35,8 @@ public class HistoVect {
      * @param M
      */
     public void remplissageVecteur(int[][] M) {
-        for (int i = 0; i < 256; i++) {
-            for (int j = 0; j < 256; j++) {
+        for (int i = 0; i < M.length; i++) {
+            for (int j = 0; j < M[0].length; j++) {
                 vecteur[M[i][j]]++;
             }
         }
@@ -41,7 +45,9 @@ public class HistoVect {
     public void afficheVecteur() {
         for (int i = 0; i < vecteur.length; i++) {
             System.out.print(" " + vecteur[i] + " ");
+            
         }
+        System.out.println("");
     }
 
     public void afficheVecteurDetailler() {

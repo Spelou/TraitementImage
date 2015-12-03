@@ -94,7 +94,15 @@ public class LectureFichier {
             }
             // fermeture du fichier
             fichier.close();
-        } catch (Exception e) {
+        }
+
+        catch (FileNotFoundException e1) {
+            System.out.println("");
+            e1.printStackTrace();
+        } catch (IOException e2) {
+            e2.printStackTrace();
+        }
+        catch (Exception e) {
             e.printStackTrace();
         }
         
