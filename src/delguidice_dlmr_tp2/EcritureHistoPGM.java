@@ -32,21 +32,27 @@ public class EcritureHistoPGM {
             writer.newLine();
             writer.write("#");
             writer.newLine();
-            writer.write("2716 260");
+            writer.write("2726 256");
             writer.newLine();
             writer.write("255");
             writer.newLine();
             for (int i = 0; i < vecteur.length; i++) {
 
                 for (int j = 0; j < 1; j++) {
-                    for (int k = 0; k < 1; k++) {
-                        String tmp=Integer.toString(i);
+                    for (int k = 0; k < 10; k++) {
+                        String tmp = Integer.toString(i);
                         writer.write(tmp);
                         writer.write("\t");
                     }
+                    writer.newLine();
+
                     for (int p = 0; p < vecteur[i]; p++) {
-                        writer.write("0");
+                        writer.write("255");
+                        
                         writer.write("\t");
+                        if ((p % 50) == 0) {
+                            writer.newLine();
+                        }
                     }
                     for (int q = vecteur[i]; q < 2717; q++) {
                         writer.write("255");
