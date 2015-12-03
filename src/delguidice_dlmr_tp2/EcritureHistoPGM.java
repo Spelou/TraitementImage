@@ -17,6 +17,7 @@ import java.util.Scanner;
  */
 public class EcritureHistoPGM {
 
+     // commentaire inutile
     private String nomNvFichier;
     BufferedWriter writer;
 
