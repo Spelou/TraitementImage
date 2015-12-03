@@ -48,15 +48,20 @@ public class EcritureHistoPGM {
 
                     for (int p = 0; p < vecteur[i]; p++) {
                         writer.write("255");
-                        
+
                         writer.write("\t");
                         if ((p % 50) == 0) {
                             writer.newLine();
                         }
                     }
-                    for (int q = vecteur[i]; q < 2717; q++) {
-                        writer.write("255");
+                    writer.newLine();
+
+                    for (int q = vecteur[i]; q < 2726; q++) {
+                        writer.write("0");
                         writer.write("\t");
+                        if ((q % 50) == 0) {
+                            writer.newLine();
+                        }
                     }
                     writer.newLine();
                 }
