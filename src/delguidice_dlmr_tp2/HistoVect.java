@@ -24,8 +24,8 @@ public class HistoVect {
         //initialisation du vecteur au valeurs 0
         vecteur = new int[256];
         //remplissage du vecteur de l'histogramme
-        for (int i = 0; i < taille; i++) {
-            for (int j = 0; j < taille; j++) {
+        for (int i = 0; i < 256; i++) {
+            for (int j = 0; j < 256; j++) {
                 vecteur[M[i][j]]++;
             }
         }
