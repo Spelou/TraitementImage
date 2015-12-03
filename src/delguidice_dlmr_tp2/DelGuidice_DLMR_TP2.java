@@ -18,7 +18,8 @@ public class DelGuidice_DLMR_TP2 {
         // TODO code application logic here
         System.out.println("Bienvenue dans le traitement d'image");
         System.out.println("");
-        LectureFichier lectureSimple= new LectureFichier("lena");
+        LectureFichier lectureSimple= new LectureFichier();
+        lectureSimple.lectureNomFichier("lena");
         HistoVect vecto = new HistoVect(lectureSimple.getMatriceImage());
         vecto.afficheVecteurDetailler();
         System.out.println(vecto.maximumVecteur());
