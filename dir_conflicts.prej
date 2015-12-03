@@ -1,0 +1,10 @@
+Trying to add new property 'svn:ignore'
+but the property already exists.
+<<<<<<< (local property value)
+build
+dist
+.~lock.lena.pgm#
+=======
+build
+dist
+>>>>>>> (incoming property value)
