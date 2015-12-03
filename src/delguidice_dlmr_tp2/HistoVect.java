@@ -22,7 +22,7 @@ public class HistoVect {
     public HistoVect(int[][] M) {
         int taille = M.length;
         //initialisation du vecteur au valeurs 0
-        vecteur = new int[taille];
+        vecteur = new int[256];
         //remplissage du vecteur de l'histogramme
         for (int i = 0; i < taille; i++) {
             for (int j = 0; j < taille; j++) {
