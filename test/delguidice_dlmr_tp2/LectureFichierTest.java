@@ -26,10 +26,12 @@ public class LectureFichierTest {
     
     @BeforeClass
     public static void setUpClass() {
+        System.out.println("Test Lecture fichier");
     }
     
     @AfterClass
     public static void tearDownClass() {
+         System.out.println("Fin du test Lecture fichier");
     }
     
     @Before
@@ -62,6 +64,7 @@ public class LectureFichierTest {
          lectureTest.lectureNomFichier("test");
          //vérification de l'égalité
          assertEquals(lectureTest.getMatriceImage(),matriceTest);
+         //la classe lecture fais appel au même code que lectureNom mais print (inutile de la tester)
         
     }
 
