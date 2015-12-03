@@ -32,7 +32,7 @@ public class EcritureHistoPGM {
             writer.newLine();
             writer.write("#");
             writer.newLine();
-            writer.write("2726 256");
+            writer.write("2726 255");
             writer.newLine();
             writer.write("255");
             writer.newLine();
