@@ -17,11 +17,11 @@ import java.util.Scanner;
  */
 public class EcritureHistoPGM {
 
-     // commentaire inutile
+
     private String nomNvFichier;
     BufferedWriter writer;
 
-    public EcritureHistoPGM(int[] vecteur) {
+    public void MethodeEcritureHistoPGM(int[] vecteur) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Donner le nom du fichier dans lequel sera enregistrer l'histogramme au format PGM: \n");
         nomNvFichier = scan.next();
