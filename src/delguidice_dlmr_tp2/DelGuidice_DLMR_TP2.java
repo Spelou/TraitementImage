@@ -20,7 +20,8 @@ public class DelGuidice_DLMR_TP2 {
         System.out.println("");
         LectureFichier lectureSimple= new LectureFichier();
         lectureSimple.lectureNomFichier("lena");
-        HistoVect vecto = new HistoVect(lectureSimple.getMatriceImage());
+        HistoVect vecto = new HistoVect();
+        vecto.remplissageVecteur(lectureSimple.getMatriceImage());
         vecto.afficheVecteurDetailler();
         System.out.println(vecto.maximumVecteur());
         EcritureHistoPGM ecritureSimple=new EcritureHistoPGM(vecto.getVecteur());
