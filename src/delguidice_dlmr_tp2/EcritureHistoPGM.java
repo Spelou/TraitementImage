@@ -17,9 +17,11 @@ import java.util.Scanner;
  */
 public class EcritureHistoPGM {
 
-
     private String nomNvFichier;
     BufferedWriter writer;
+
+    public EcritureHistoPGM() {
+    }
 
     public void MethodeEcritureHistoPGM(int[] vecteur) {
         Scanner scan = new Scanner(System.in);
