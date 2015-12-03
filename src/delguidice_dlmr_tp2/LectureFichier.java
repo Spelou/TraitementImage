@@ -13,7 +13,7 @@ import java.util.StringTokenizer;
  * @author Quentin
  */
 public class LectureFichier {
-
+    // commentaire inutile
     //attributs
     /**
      * Attribut 1/3. String addresse ou nom du fichier .PGM à lire.
@@ -34,10 +34,12 @@ public class LectureFichier {
      *
      * @param nomACharger nom du fichier à charger sans l'extension
      */
-    public LectureFichier(String nomACharger) {
-        this.nomFichierImage = nomACharger;
+    public LectureFichier() {
+    }
+    
+    public void lectureNomFichier(String nomACharger){
         try {
-
+            this.nomFichierImage = nomACharger;
             //ouverture fichier    
             System.out.println("Ouverture du fichier...");
             BufferedReader fichier = new BufferedReader(new FileReader(nomFichierImage + ".pgm"));
@@ -95,7 +97,7 @@ public class LectureFichier {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
+        
     }
 
     /**
