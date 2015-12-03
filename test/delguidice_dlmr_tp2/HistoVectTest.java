@@ -56,7 +56,6 @@ public class HistoVectTest {
         matriceTest[1][1] = 16;
         matriceTest[1][2] = 40;
          //creation du vecteur voulu
-        // décalage des indices de 1 en comptant le 0
         int[] vecteurVoulu;
         vecteurVoulu = new int[256];
         vecteurVoulu[255] = 1;
