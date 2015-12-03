@@ -17,18 +17,20 @@ import java.util.Scanner;
  */
 public class EcritureHistoPGM {
 
+
     private String nomNvFichier;
     BufferedWriter writer;
 
     public EcritureHistoPGM() {
-    }
+            }
 
     public void MethodeEcritureHistoPGM(int[] vecteur) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Donner le nom du fichier dans lequel sera enregistrer l'histogramme au format PGM: \n");
         nomNvFichier = scan.next();
         nomNvFichier += ".pgm";
-        try {
+        if(vecteur!=null){
+            try {
             writer = new BufferedWriter(new FileWriter(nomNvFichier));
 
             writer.write("P2");
@@ -68,6 +70,10 @@ public class EcritureHistoPGM {
             e1.printStackTrace();
         } catch (IOException e2) {
             e2.printStackTrace();
+        }
+        }
+        else{
+            System.out.println("Votre vecteur en paramétre est null.");
         }
 
     }
