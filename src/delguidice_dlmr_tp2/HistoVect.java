@@ -20,8 +20,7 @@ public class HistoVect {
      * valeur i dans la matrice correspondant au fichier PGM.
      *
      */
-    public HistoVect(int[][] M) {
-        int taille = M.length;
+    public HistoVect() {
         //initialisation du vecteur au valeurs 0
         vecteur = new int[256];
     }
