@@ -39,12 +39,6 @@ public class EcritureHistoPGM {
             for (int i = 0; i < vecteur.length; i++) {
 
                 for (int j = 0; j < 1; j++) {
-                    for (int k = 0; k < 10; k++) {
-                        String tmp = Integer.toString(i);
-                        writer.write(tmp);
-                        writer.write("\t");
-                    }
-                    writer.newLine();
 
                     for (int p = 0; p < vecteur[i]; p++) {
                         writer.write("255");
