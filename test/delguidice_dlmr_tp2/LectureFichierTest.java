@@ -4,8 +4,10 @@
  * and open the template in the editor.
  */
 package delguidice_dlmr_tp2;
-
+import java.io.*;
+import java.io.IOException; 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -41,12 +43,26 @@ public class LectureFichierTest {
     /**
      * Test of lectureNomFichier method, of class LectureFichier.
      */
-    @Test(expected=Exception.class)
+    @Test
     public void testLectureNomFichier() {
         System.out.println("lectureNomFichier");
         System.out.println("Ouverture du fichier avec le nom lean au lieu de lena");
         LectureFichier lectureFausse=new LectureFichier();
         lectureFausse.lectureNomFichier("lean");
+         System.out.println("Ouverture d'un fichier du même type contenant 4 valeurs (test)");
+         // création matrice voulue
+         int matriceTest[][];
+         matriceTest= new int[2][2];
+         matriceTest[0][0]=255;
+         matriceTest[0][1]=0;
+         matriceTest[1][0]=40;
+         matriceTest[1][1]=16;
+         //lecture fichier
+         LectureFichier lectureTest=new LectureFichier();
+         lectureTest.lectureNomFichier("test");
+         //vérification de l'égalité
+         assertEquals(lectureTest.getMatriceImage(),matriceTest);
+        
     }
 
     /**
@@ -54,7 +70,6 @@ public class LectureFichierTest {
      */
     @Test
     public void testLecture() {
-        System.out.println("lecture");
     }
 
     /**
@@ -62,7 +77,6 @@ public class LectureFichierTest {
      */
     @Test
     public void testGetNomFichierImage() {
-        System.out.println("getNomFichierImage");
     }
 
     /**
@@ -70,13 +84,6 @@ public class LectureFichierTest {
      */
     @Test
     public void testGetReader() {
-        System.out.println("getReader");
-        LectureFichier instance = new LectureFichier();
-        BufferedReader expResult = null;
-        BufferedReader result = instance.getReader();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -84,7 +91,6 @@ public class LectureFichierTest {
      */
     @Test
     public void testGetMatriceImage() {
-        System.out.println("getMatriceImage");
     }
 
     /**
