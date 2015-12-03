@@ -32,7 +32,7 @@ public class EcritureHistoPGM {
             writer.newLine();
             writer.write("#");
             writer.newLine();
-            writer.write("2726 255");
+            writer.write("1309 255");
             writer.newLine();
             writer.write("255");
             writer.newLine();
@@ -44,16 +44,16 @@ public class EcritureHistoPGM {
                         writer.write("255");
 
                         writer.write("\t");
-                        if ((p % 50) == 0) {
+                        if ((p % 10) == 0) {
                             writer.newLine();
                         }
                     }
                     writer.newLine();
 
-                    for (int q = vecteur[i]; q < 2726; q++) {
+                    for (int q = vecteur[i]; q < 1309; q++) {
                         writer.write("0");
                         writer.write("\t");
-                        if ((q % 50) == 0) {
+                        if ((q % 10) == 0) {
                             writer.newLine();
                         }
                     }
