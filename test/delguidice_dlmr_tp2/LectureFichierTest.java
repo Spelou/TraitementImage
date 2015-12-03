@@ -55,10 +55,6 @@ public class LectureFichierTest {
     @Test
     public void testLecture() {
         System.out.println("lecture");
-        LectureFichier instance = new LectureFichier();
-        instance.lecture();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -67,12 +63,6 @@ public class LectureFichierTest {
     @Test
     public void testGetNomFichierImage() {
         System.out.println("getNomFichierImage");
-        LectureFichier instance = new LectureFichier();
-        String expResult = "";
-        String result = instance.getNomFichierImage();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -95,12 +85,6 @@ public class LectureFichierTest {
     @Test
     public void testGetMatriceImage() {
         System.out.println("getMatriceImage");
-        LectureFichier instance = new LectureFichier();
-        int[][] expResult = null;
-        int[][] result = instance.getMatriceImage();
-        assertArrayEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -108,12 +92,6 @@ public class LectureFichierTest {
      */
     @Test
     public void testSetNomFichierImage() {
-        System.out.println("setNomFichierImage");
-        String nomFichierImage = "";
-        LectureFichier instance = new LectureFichier();
-        instance.setNomFichierImage(nomFichierImage);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -121,12 +99,7 @@ public class LectureFichierTest {
      */
     @Test
     public void testSetReader() {
-        System.out.println("setReader");
-        BufferedReader reader = null;
-        LectureFichier instance = new LectureFichier();
-        instance.setReader(reader);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+
     }
 
     /**
@@ -134,12 +107,7 @@ public class LectureFichierTest {
      */
     @Test
     public void testSetMatriceImage() {
-        System.out.println("setMatriceImage");
-        int[][] matriceImage = null;
-        LectureFichier instance = new LectureFichier();
-        instance.setMatriceImage(matriceImage);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+
     }
 
     /**
@@ -147,11 +115,7 @@ public class LectureFichierTest {
      */
     @Test
     public void testAfficheMatrice() {
-        System.out.println("afficheMatrice");
-        LectureFichier instance = new LectureFichier();
-        instance.afficheMatrice();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+
     }
     
 }
